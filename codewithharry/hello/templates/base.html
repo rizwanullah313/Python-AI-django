@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %} Rizwan Academy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Rizwan Academy</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Services
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/services">Tuition</a></li>
+                      <li><a class="dropdown-item" href="#">Online Lectures</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">School Teacher</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+          {% if messages %}
+              {% for message in messages %}
+              <div class="alert alert-{{ message.tags }} alert-dismissible fade show my-0" role="alert">
+                {{ message }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              {% endfor %}
+          {% endif %}
+
+             
+
+          {% block body %}{% endblock body %}
+       
+            <h1>Rizwan</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quod impedit animi magnam praesentium, nihil dicta facere sapiente ad quidem! Accusamus provident quos nihil et repellendus cupiditate, rem fuga expedita!</p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, eveniet magni nulla nihil amet illo facere consequuntur itaque quaerat porro vel obcaecati! Labore minus molestiae vero enim, inventore nesciunt optio quo quis voluptate sapiente nostrum modi necessitatibus illum fugiat facilis deserunt nisi eveniet officia delectus est minima. Fugiat numquam magni explicabo, nobis voluptatem consequuntur dignissimos perspiciatis laborum officia, sit magnam voluptas fuga eaque totam dolores assumenda quasi? Nobis, voluptate. Reiciendis autem excepturi vero cum labore, recusandae corporis harum pariatur! Velit nesciunt voluptatibus cumque pariatur voluptas quos blanditiis eos error aliquam impedit explicabo ullam dolor debitis ducimus sunt non quam, neque exercitationem odio, voluptatum earum? Voluptates iste distinctio voluptate animi adipisci iure necessitatibus veritatis culpa! Tempore voluptatem voluptas iusto laudantium fugiat, aperiam cumque pariatur et inventore. Placeat nihil cum eius alias illo et eveniet fugit consequatur, deserunt eos perspiciatis necessitatibus sequi aperiam consectetur repellendus cumque provident omnis, temporibus expedita, sint error ad! Non officiis aperiam animi earum iure dolores saepe accusantium consectetur amet tempora ratione aut distinctio alias nulla delectus illo temporibus iste porro eos neque, rem esse. Veniam quo itaque perferendis molestiae deleniti iusto alias dolor numquam dolore porro. Ipsam maiores nam vero doloribus. Optio ut repellendus, veniam iure dolores aperiam quam qui dignissimos, fuga reprehenderit corporis excepturi commodi rerum praesentium enim inventore omnis nobis, atque consequuntur debitis architecto? Hic dignissimos nobis recusandae neque ea accusantium fugiat laudantium quae quos commodi optio, voluptatem, incidunt consectetur. Ipsa quos iure veniam asperiores praesentium eligendi officia earum! Deleniti veniam enim iure officia ex quis. Accusantium, dolorum tenetur alias obcaecati est suscipit natus facilis, eveniet animi sint aspernatur ipsum consequuntur? Reprehenderit ipsum sunt sequi dolor error. Tempore quod delectus ducimus. Ipsum ratione est, nihil nisi doloremque labore voluptas nam eius accusamus omnis soluta assumenda nesciunt quibusdam aperiam necessitatibus mollitia? Voluptatibus ab non illum deleniti temporibus, ad quas modi voluptatum molestias a vel labore voluptate laudantium pariatur hic exercitationem aut minus? Expedita, perspiciatis ex, minus quam quos, commodi itaque voluptatem dolores veritatis corrupti similique amet. Amet, sint autem incidunt unde, qui saepe laboriosam quo voluptas facere aut sapiente optio asperiores nesciunt nostrum est rem rerum totam consequatur beatae quibusdam delectus labore ducimus. Aliquid, adipisci accusantium ullam corporis recusandae deleniti pariatur, cupiditate alias aspernatur, unde tempore illo excepturi dolore magni modi consectetur explicabo velit similique atque asperiores quam? Temporibus, earum maxime placeat fugit, repudiandae eius illo ratione asperiores velit, explicabo quod delectus nesciunt alias? Odit ipsum facilis quos quidem nam dignissimos officia libero similique aliquid porro necessitatibus perferendis reiciendis, quasi molestias, omnis non at, rem minima. Accusamus ipsum sed sint culpa quis sit ipsam. Illo exercitationem excepturi sint deleniti, sunt provident ipsum dolores voluptatem reiciendis! Tempora, ullam maxime. Voluptatem reiciendis, dolore vero reprehenderit quasi ad aliquid maxime suscipit, quae consequatur amet!</p>
+                    <h3 class="h3">{{variable}}</h3>
+                    <h3>{{v2}}</h3>
+
+    
+                </div>
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</body>
+</html>
