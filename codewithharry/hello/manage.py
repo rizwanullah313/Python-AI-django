@@ -29,7 +29,7 @@ if __name__ == '__main__':
 # python manage.py startapp home
 # add urls.py in home
 
-#54:38, 1:17:48 ,1:33:03
+#54:38, 1:17:48 ,1:33:03, 2:25:15
 
 # python manage.py makemigrations
 # python manage.py migrate       
@@ -41,3 +41,22 @@ if __name__ == '__main__':
 # per python manage.py makemigrations
 # per table banan h
 # python manage.py migrate
+
+
+
+# python manage.py shell
+# from home.models import Contact
+# Contact.objects.all()
+# Contact.objects.all()[0]
+# Contact.objects.all()[0].name
+# Contact.objects.all()[0].email
+# Contact.objects.filter(name="rizwan")
+# Contact.objects.filter(name="rizwan",phone="13234")
+
+
+# ins = Contact.objects.all()[0]
+# ins.name = "abc"
+# ins.save()
+# Contact.objects.filter(name="rizwan").first()
+# Contact.objects.filter(name="rizwan").last()
+# Contact.objects.filter(des__startswith="des")
